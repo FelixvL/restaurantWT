@@ -12,6 +12,9 @@ public class Kok {
     long id;
     String naam;
 
+    public Kok() {
+    }
+
     public Kok(String naam) {
         this.naam = naam;
     }
