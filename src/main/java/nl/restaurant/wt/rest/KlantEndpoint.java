@@ -1,14 +1,13 @@
 package nl.restaurant.wt.rest;
 
-import javax.persistence.Entity;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import nl.restaurant.wt.controller.KlantService;
 import nl.restaurant.wt.domein.Klant;
 
-@Entity
+@RestController
 public class KlantEndpoint {
 
 	@Autowired
