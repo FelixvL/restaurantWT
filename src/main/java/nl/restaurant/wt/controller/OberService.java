@@ -12,10 +12,9 @@ public class OberService {
 	@Autowired
 	OberRepository oberRepository;
 	
-	public void test() {
+	public Iterable<Ober> getAlleObers() {
+		System.out.println("ober test in service");
 		Iterable<Ober> obers = oberRepository.findAll();
-		for (Ober o: obers) {
-			System.out.println("een ober" + o);
-		}
-		}
+		return obers;
+	}
 }
