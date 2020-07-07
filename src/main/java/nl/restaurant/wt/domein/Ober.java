@@ -7,8 +7,21 @@ import javax.persistence.Id;
 
 @Entity
 public class Ober {
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	long id;
-	String naam;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    long id;
+    String obernaam;
+    
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public String getObernaam() {
+		return obernaam;
+	}
+	public void setObernaam(String obernaam) {
+		this.obernaam = obernaam;
+	}
 }
