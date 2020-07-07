@@ -17,4 +17,8 @@ public class OberService {
 		Iterable<Ober> obers = oberRepository.findAll();
 		return obers;
 	}
+	
+	public void oberOpslaan(Ober ober){
+		oberRepository.save(ober);
+	}
 }
