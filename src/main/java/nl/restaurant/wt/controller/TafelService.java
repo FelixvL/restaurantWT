@@ -18,4 +18,15 @@ public class TafelService {
 		Iterable<Tafel> tafels = tafelrepository.findAll();
 		return tafels;
 	}
+	
+	public void metPathVar(String tafelnummer) {
+		System.out.println("log ben ik hier");
+		Tafel tafel = new Tafel();
+		tafel.setTafelnummer(tafelnummer);
+		tafelrepository.save(tafel);
+	}
+	
+	public void voerEenTafelToe(Tafel tafel) {
+		tafelrepository.save(tafel);
+	}
 }
