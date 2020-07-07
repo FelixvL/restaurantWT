@@ -33,7 +33,7 @@ public class OberEndpoint {
 		return ober;
 	}
 	
-	@PostMapping(path = "/obertoevoegen", consumes = "application/json", produces = "text/plain")
+	@PostMapping(path = "/voegobertoe", consumes = "application/json", produces = "text/plain")
 	public String oberToevoegen(@RequestBody Ober ober) {
 		oberService.oberOpslaan(ober);
 		return "Ober toegevoegd";
