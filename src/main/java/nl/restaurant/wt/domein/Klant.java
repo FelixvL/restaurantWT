@@ -12,9 +12,6 @@ public class Klant {
 	long id; 
 	String naam;
 	
-	public Klant(String naam) {
-		this.naam = naam; 
-	}
 	public long getId() {
 		return id; 
 	}
