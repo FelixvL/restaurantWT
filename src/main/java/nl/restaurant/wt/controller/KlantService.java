@@ -1,20 +1,21 @@
 package nl.restaurant.wt.controller;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import nl.restaurant.wt.domein.Ober;
+import nl.restaurant.wt.domein.Klant;
 
 @Service
 @Transactional
-public class OberService {
+public class KlantService {
 	@Autowired
-	OberRepository oberRepository;
+	KlantRepository klantrepository;
 	
-	public Iterable<Ober> getAlleObers() {
-		System.out.println("ober test in service");
-		Iterable<Ober> obers = oberRepository.findAll();
-		return obers;
+	public Iterable<Klant> test() {
+		System.out.println("test in service"); 
+		Iterable<Klant> klanten = klantrepository.findAll(); 
+		return klanten;
 	}
+
 }
+
